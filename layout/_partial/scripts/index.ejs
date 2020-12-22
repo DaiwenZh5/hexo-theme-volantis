@@ -74,7 +74,11 @@
   <%- js(['https://cdn.jsdelivr.net/npm/hexo-theme-volantis@'+theme.info.theme_version+'/source/js/app.min.js']) %>
 <% } else { %>
   <%- js(['js/app.js']) %>
-<% } %>
+  <% } %>
+
+<%- js(['js/message.js']) %>
+<%- js(['sw.js']) %>
+<%- js(['sw-register.js']) %>
 
 <!-- optional -->
 <% if (theme.search && theme.search.enable) { %>
